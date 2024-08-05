@@ -89,3 +89,8 @@ healer.levelUp();
 const comparisonResult_3 = Character.compareLevels(warrior, healer);
 console.log(`Comparación de niveles: ${comparisonResult_3}`); // Debería devolver -1 porque Luna tiene más nivel que Thor
 
+// BONUS: Usa el método sort y el método estático compareLevels para ordenar adecuadamente el array de personajes de menor a mayor level
+let characters = [healer, cleverWarrior, warrior, ];
+console.log('Antes de aplicar el sort: ', characters.map(c=> `${c.name} - level ${c.level}`)); // Los perosnajes estan desordenador por nivel
+characters.sort(Character.compareLevels);
+console.log('Después de aplicar el sort: ', characters.map(c=> `${c.name} - level ${c.level}`)); // Los perosnajes deberían estar oredenador de menor a mayor nivel
