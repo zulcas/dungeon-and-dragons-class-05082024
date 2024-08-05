@@ -9,17 +9,18 @@ class Character {
 
     // Método para subir de nivel
     levelUp() {
-        this.level += 1;
+        // COMPLETAR
     }
 
     // Método para recibir daño
     receiveDamage(damage) {
-        this.hitPoints -= damage;
+        // COMPLETAR
+
     }
 
     // Método para verificar si el personaje está vivo
     isAlive() {
-        return this.hitPoints > 0;
+        // COMPLETAR
     }
 }
 // Creación de una instancia de Character para probar la clase

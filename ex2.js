@@ -32,25 +32,13 @@ class Warrior extends Character {
 
     // Método exclusivo para el guerrero: strongAttack
     strongAttack() {
-        // Calcula un número aleatorio entre 0 y attackPower y lo multiplica por 2
-        const damage = Math.floor(Math.random() * this.attackPower * 2);
-        return damage;
+        // COMPLETAR
     }
 }
 
 // Definición de la subclase Healer
 class Healer extends Character {
-    constructor(name, attackPower, intelligence, hitPoints) {
-        // Sumar +1 a la inteligencia antes de llamar al constructor de la clase base
-        super(name, attackPower, intelligence + 1, hitPoints);
-    }
-
-    // Método exclusivo para el curandero: heal
-    heal() {
-        // Calcula un número aleatorio entre 0 y intelligence y lo multiplica por 2
-        const healing = Math.floor(Math.random() * this.intelligence * 2);
-        return healing;
-    }
+   // COMPLETAR : constructor y método heal
 }
 
 // Creación de un guerrero y un curandero
@@ -64,7 +52,7 @@ console.log(`Inteligencia: ${warrior.intelligence}`);
 console.log(`Puntos de vida: ${warrior.hitPoints}`);
 console.log(`Nivel: ${warrior.level}`);
 
-// Mostrar las propiedades del curandero
+// Mostrar las propiedades del curandero (hasta que no completes la subclase Healer esto no va a funcionar)
 console.log(`Curandero: ${healer.name}`);
 console.log(`Poder de ataque: ${healer.attackPower}`);
 console.log(`Inteligencia: ${healer.intelligence}`);
