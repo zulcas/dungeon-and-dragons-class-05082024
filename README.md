@@ -31,7 +31,7 @@ Extiende https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Classes
 
 ### Warrior
 
-Crea una subclase de nombre Warrior
+Crea una subclase de nombre Warrior que herea de la clase Character
 
 - Al crear un guerrero debemos sumar +1 a sus puntos de vida antes de crear la propiedad this.attackPower.
 - Solamente los guerreros poseen un método de nombre _strongAttack_
@@ -39,7 +39,7 @@ Crea una subclase de nombre Warrior
 
 ### Healer
 
-Crea una subclase de nombre Healer
+Crea una subclase de nombre Healer que hereda de la clase Character
 
 - Al crear un curandero debemos sumar +1 a sus puntos de inteligencia
 - Solamente los curandores poseen un método de nombre _heal_
