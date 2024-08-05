@@ -2,13 +2,15 @@
 
 ## ex1 : Creación de una clase simple
 
+Modifica solamente el código dentro del bloque class {}
 Crea una clase de nombre Character
 
-- La clase debe tener las propiedades name, attackPower, intelligence.
+- La clase debe tener las propiedades name, attackPower, intelligence, level
+- Todas las propiedades pueden ser inicializadas por el constructor
 
 ### Métodos en la clase
 
-La clase Character tiene dos métdos
+La clase Character tiene dos métodos
 
 #### receiveDamage
 
