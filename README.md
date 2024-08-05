@@ -4,21 +4,19 @@
 
 Crea una clase de nombre Character
 
-- La clase debe tener las propiedades name, race, attackPower, intelligence y level.
-- Un constructor debe inicializar estas propiedades, salvo level, que siempre empieza a 0.
-- Implementa un método de nombre _levelUp_ que incrementa en uno el nivel del personaje
+- La clase debe tener las propiedades name, attackPower, intelligence.
 
-## ex1.5: Métodos en la clase
+### Métodos en la clase
 
 La clase Character tiene dos métdos
 
-### receiveDamage
+#### receiveDamage
 
 El método receiveDamage tiene un argumento de tipo number.
 Simula el daño recibido por un persoaje.
 Resta el daño recibido al personaje cuando el método es invocado
 
-### isAlive
+#### isAlive
 
 El método isDead no tiene argumentos.
 Retorna un true si el personaje está vivo, y false en caso contrario
@@ -35,7 +33,7 @@ Extiende https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Classes
 
 Crea una subclase de nombre Warrior
 
-- Al crear un guerrero debemos sumar +1 a sus puntos de vida 
+- Al crear un guerrero debemos sumar +1 a sus puntos de vida antes de crear la propiedad this.attackPower.
 - Solamente los guerreros poseen un método de nombre _strongAttack_
   - El método strongAttack cuando se invoca calcula un número entre 0 y el _attackPower_ del guerrero. Debe retornar este número
 
@@ -44,14 +42,16 @@ Crea una subclase de nombre Warrior
 Crea una subclase de nombre Healer
 
 - Al crear un curandero debemos sumar +1 a sus puntos de inteligencia
-- Solamente los curandores poseen un método de nomnre _heal_
+- Solamente los curandores poseen un método de nombre _heal_
   - El método _heal_ calcula un número entre 0 y la _intelligence_ del curandero. Debe retornar esta número
 
-### Iteración 3: Clases estáticas
+### Iteración 3: Métodos estáticos
 
-Crea un método estático dentro de la clase _Character_
+Crea un método estático de nombre _compareLevels_ dentro de la clase _Character_
 
 El método estático sirve para comparar el nivel de dos personajes
-El método recibe dos _Characters_
+El método recibe dos instancias de la clase _Characters_ (dos objetos)
 
-Devuelve un string indicando qué personaje tiene más nivel de los dos
+Devuelve un 1 si el character1 tiene más nivel que el character2. 
+Devuelve un -1 si el character2 tiene más nivel que el character1
+Devuelve un 0 si tienen el mismo nivel
