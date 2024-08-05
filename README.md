@@ -5,12 +5,17 @@
 Modifica solamente el código dentro del bloque class {}
 Crea una clase de nombre Character
 
-- La clase debe tener las propiedades name, attackPower, intelligence, level
-- Todas las propiedades pueden ser inicializadas por el constructor
+- La clase debe tener las propiedades name, attackPower, intelligence,hitPoints y level
+- Todas las propiedades pueden ser inicializadas por el constructor, salgo la propiedad level, que siempre empieza a 0.
 
 ### Métodos en la clase
 
 La clase Character tiene dos métodos
+
+### levelUp
+
+El método no recibe argumentos.
+Incrementa en 1 el nivel del personaje.
 
 #### receiveDamage
 
@@ -37,7 +42,7 @@ Crea una subclase de nombre Warrior que herea de la clase Character
 
 - Al crear un guerrero debemos sumar +1 a sus puntos de vida antes de crear la propiedad this.attackPower.
 - Solamente los guerreros poseen un método de nombre _strongAttack_
-  - El método strongAttack cuando se invoca calcula un número entre 0 y el _attackPower_ del guerrero. Debe retornar este número
+  - El método strongAttack cuando se invoca calcula un número entre 0 y el _attackPower_ del guerrero, y además, lo multiplica por 2.  Debe retornar este número
 
 ### Healer
 
@@ -45,7 +50,7 @@ Crea una subclase de nombre Healer que hereda de la clase Character
 
 - Al crear un curandero debemos sumar +1 a sus puntos de inteligencia
 - Solamente los curandores poseen un método de nombre _heal_
-  - El método _heal_ calcula un número entre 0 y la _intelligence_ del curandero. Debe retornar esta número
+  - El método _heal_ calcula un número entre 0 y la _intelligence_ del curandero, y además, lo multiplica por 2. Debe retornar esta número
 
 ### Iteración 3: Métodos estáticos
 
