@@ -33,11 +33,9 @@ Retorna un true si el personaje está vivo, y false en caso contrario
 
 ## ex2: Herencia
 
-En este mundo de fantasía hay diferentes tipos de clases de personaje. Cada clase define unos poderes y habilidades en concreto.Además, por el hecho de ser de una clase u otra, algunos de sus características quedan alteradas a la hora de crearlo
-  
-  http://carmensminiaturepainting.blogspot.com/2011/03/elf-sniper-and-d-classes.html
+En este mundo de fantasía hay [diferentes tipos de clases de personajes](http://carmensminiaturepainting.blogspot.com/2011/03/elf-sniper-and-d-classes.html). Cada clase define unos poderes y habilidades en concreto.Además, por el hecho de ser de una clase u otra, algunos de sus características quedan alteradas a la hora de crearlo. 
  
-Extiende https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Classes#subclases_con_extends la clase 'Personaje' y crea dos subclases 
+Extiende la clase 'Personaje' y crea dos [subclases](https://javascript.info/class-inheritance) 
 
 
 ### Warrior
