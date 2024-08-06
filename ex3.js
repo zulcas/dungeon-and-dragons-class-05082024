@@ -25,6 +25,12 @@ class Character {
     // Método estático para comparar niveles de dos personajes
     static compareLevels(character1, character2) {
            // COMPLETAR
+           if(character1.level>character2.level){
+            return 1;
+           }else if(character2.level>character2.level){
+            return -1;
+           }
+           return 0;
         }
 }
 

@@ -33,12 +33,21 @@ class Warrior extends Character {
     // Método exclusivo para el guerrero: strongAttack
     strongAttack() {
         // COMPLETAR
+        return Math.ceil(Math.random()*this.attackPower)*2;
     }
 }
 
 // Definición de la subclase Healer
 class Healer extends Character {
    // COMPLETAR : constructor y método heal
+   constructor(name, attackPower, intelligence, hitPoints){
+    //Inicializo varibales constructor
+    super(name, attackPower, intelligence+1, hitPoints);
+   }
+   //Método exclusivo curandero
+   heal(){
+    return Math.ceil(Math.random()*this.intelligence)*2;
+   }
 }
 
 // Creación de un guerrero y un curandero
